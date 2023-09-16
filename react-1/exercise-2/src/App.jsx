@@ -1,6 +1,54 @@
 import React from 'react';
 
-function App() {
+function App(){
+  return(
+    <div id="App">
+      <Header/>
+      <Temperature/>
+      <Footer/>
+    </div>
+  )
+}
+
+function Header(){
+  return(
+    <header>
+      <span>Turn on / off</span>
+      <p>Current Temperature: XXX</p>
+    </header>
+  )
+}
+
+function Temperature(){
+  const temp = 25;
+  return(
+    <div id="temperature">
+      <span>{temp} 0c</span>
+    </div>
+  )
+}
+
+function Footer(){
+  return(
+    <footer>
+      <button>Up</button>
+      <button>Down</button>
+    </footer>
+  )
+}
+
+function Content(){
+  return(
+    <main>
+      <Temperature/>
+    </main>
+  )
+}
+
+export default App;
+
+/*
+ function App() {
   return (
     <div id="app">
       <Header />
@@ -8,34 +56,42 @@ function App() {
       <Footer />
     </div>
   );
-}
+} 
 
 function Header() {
   return (
-    // Code for Header
-    // <Header />
+    <header>
+      <span>Turn on / off</span>
+      <p>Current Temperature: XXX</p>
+    </header>
+  );
+}
+ 
+function Content(){
+  return(
+    <main>
+      <Temperature/>
+    </main>
   );
 }
 
-function Content() {
-  return (
-    // Code for Content
-    // <Content />
+function Temperature(){
+  const temperature = 80;
+  return(
+    <div id="temperature">
+        <span>{temperature} Oc</span>
+    </div>
   );
 }
 
-function Temperature() {
-  return (
-    // Code for Temperature
-    // <Temperature />
-  );
-}
-
-function Footer() {
-  return (
-    // Code for Footer
-    // <Footer />
+function Footer(){
+  return(
+    <footer>
+        <button>Up</button>
+        <button>Down</button>
+      </footer>
   );
 }
 
 export default App;
+*/ 
